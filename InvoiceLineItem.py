@@ -21,14 +21,11 @@ def main():
 
     answer = "y"
     while answer.lower() == "y":
-        # get the price and quantity
         price = get_price()
         quantity = get_quantity()
     
-        # calculate the total
         total = price * quantity
 
-        # display the results
         print()
         print("PRICE:    ", f"{price: .2f}")
         print("QUANTITY: ", quantity)
@@ -36,7 +33,7 @@ def main():
         answer = input("Enter another line item? (y/n): ")
         print()
         
-    print("Bye!")
+    print("Have a great day!")
 
 
 if __name__ == "__main__":
